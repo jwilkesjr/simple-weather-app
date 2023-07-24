@@ -14,7 +14,7 @@ form.addEventListener("submit", (e) => {
 
 async function getWeatherData() {
     //Use your API key
-    const APIKey = "abab6ae37de274ff51d841fa22335acf";
+    const APIKey = "";
     const city = document.querySelector(".search-box input").value;
 
     //Return if no city is provided
