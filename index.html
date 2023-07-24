@@ -11,27 +11,28 @@
 </head>
 
 <body>
-
     <div class="container">
 
-        <div class ="search-box">
+        <form class="search-box">
             <i class="fa-solid fa-location-dot"></i>
-            <input type="text" placeholder="Enter your location">
-            <button class="fa-solid fa-magnifying-glass"></button>
-        </div>
+            <input type="text" placeholder="Enter your location" aria-label="Search location">
+            <button type="submit" class="fa-solid fa-magnifying-glass"></button>
+        </form>
 
-        <div class="not-found">
-            <img src="images/404.png">
+        <section class="not-found">
+            <img src="images/404.png" alt="Not found image">
             <p> Oops! Invalid Location :/</p>
-        </div>
+        </section>
 
-        <div class="weather-box">
-            <img src="">
+        <section class="weather-box">
+            <figure class="weather-image">
+                <img src="" alt="Weather image">
+            </figure>
             <p class="temperature"></p>
             <p class="description"></p>
-        </div>
+        </section>
 
-        <div class="weather-details">
+        <section class="weather-details">
             <div class="humidity">
                 <i class="fa-solid fa-water"></i>
                 <div class="text">
@@ -46,12 +47,9 @@
                     <p>Wind Speed</p>
                 </div>
             </div>
-
-        </div>
+        </section>
 
     </div>
-    
-    
 
     <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
